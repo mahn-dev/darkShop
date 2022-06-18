@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/component/modal.css" />
+        <title>darkShop</title>
+    </head>
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <div class="darkShop">
+            <header class="header">
+                <!-- Header navbar -->
+                <div class="header__navbar">
+                    <div class="grid">
+                        <div class="header__navbar-container">
+                            <div class="navbar__social">
+                                <ul class="navbar__social-list">
+                                    <li class="navbar__social-item">
+                                        <a href="" class="navbar__social-link">
+                                            <i class="navbar__social-icon fa-brands fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__social-item">
+                                        <a href="" class="navbar__social-link">
+                                            <i class="navbar__social-icon fa-brands fa-github-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__social-item">
+                                        <a href="" class="navbar__social-link">
+                                            <i class="navbar__social-icon fa-brands fa-youtube-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__social-item">
+                                        <i class="navbar__social-icon fa-solid fa-envelope"></i>
+                                        <div class="contact">
+                                            <div class="navbar__social-contact">
+                                                <span class="navbar__social-contact-label">Email:</span>
+                                                <a
+                                                    href="mailto:support@darkShop.com"
+                                                    class="navbar__social-contact-link"
+                                                    >support@darkShop.com</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="navbar__social-item">
+                                        <i class="navbar__social-icon fa-solid fa-phone"></i>
+                                        <div class="contact">
+                                            <div class="navbar__social-contact">
+                                                <span class="navbar__social-contact-label">Hotline:</span>
+                                                <a href="tel:08.6969.3000" class="navbar__social-contact-link"
+                                                    >08.6969.3000</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar__support">
+                                <ul class="navbar__support-list">
+                                    <li class="navbar__support-item">
+                                        <a href="" class="navbar__support-link">
+                                            <i class="navbar__support-icon fa-regular fa-pen-to-square"></i>
+                                            <span class="navbar__support-label">Customer Reviews</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__support-item">
+                                        <a href="" class="navbar__support-link">
+                                            <i class="navbar__support-icon fa-regular fa-circle-question"></i>
+                                            <span class="navbar__support-label">FAQ / Help</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar__option">
+                                <ul class="navbar__option-list">
+                                    <li class="navbar__option-item">
+                                        <i class="navbar__option-icon fa-solid fa-coins"></i>
+                                        <span class="navbar__option-label">darkCoin</span>
+                                        <i class="navbar__option-icon fa-solid fa-sort-down"></i>
+                                        <ul class="navbar__option-select-list left-side">
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <span class="navbar__option-select-icon">₫</span>
+                                                    <span class="navbar__option-select-label">VND</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <span class="navbar__option-select-icon">ⓓ</span>
+                                                    <span class="navbar__option-select-label">darkCoin</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <span class="navbar__option-select-icon">$</span>
+                                                    <span class="navbar__option-select-label">USD</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <span class="navbar__option-select-icon">￥</span>
+                                                    <span class="navbar__option-select-label">CNY</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <span class="navbar__option-select-icon">€</span>
+                                                    <span class="navbar__option-select-label">EUR</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <span class="navbar__option-select-icon">￡</span>
+                                                    <span class="navbar__option-select-label">GBP</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar__option-item">
+                                        <i class="navbar__option-icon fa-solid fa-globe"></i>
+                                        <span class="nabar__option-label">Language</span>
+                                        <i class="navbar__option-icon fa-solid fa-sort-down"></i>
+                                        <ul class="navbar__option-select-list right-side">
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <img
+                                                        src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg"
+                                                        alt="Vietnamese"
+                                                        class="navbar__option-select-icon"
+                                                    />
+                                                    <span class="navbar__option-select-label">Vietnamese</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <img
+                                                        src="https://o.rada.vn/data/image/2021/08/24/la-co-37.svg"
+                                                        alt="English"
+                                                        class="navbar__option-select-icon"
+                                                    />
+                                                    <span class="navbar__option-select-label">English</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <img
+                                                        src="https://o.rada.vn/data/image/2021/08/24/la-co-412.svg"
+                                                        alt="中文"
+                                                        class="navbar__option-select-icon"
+                                                    />
+                                                    <span class="navbar__option-select-label">中文</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <img
+                                                        src="https://o.rada.vn/data/image/2021/08/24/la-co-281.svg"
+                                                        alt="日本語"
+                                                        class="navbar__option-select-icon"
+                                                    />
+                                                    <span class="navbar__option-select-label">日本語</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <img
+                                                        src="https://o.rada.vn/data/image/2021/08/24/la-co-65.svg"
+                                                        alt="ภาษาไทย"
+                                                        class="navbar__option-select-icon"
+                                                    />
+                                                    <span class="navbar__option-select-label">ภาษาไทย</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar__option-select-item">
+                                                <a href="" class="navbar__option-select-link">
+                                                    <img
+                                                        src="https://o.rada.vn/data/image/2021/08/24/la-co-41.svg"
+                                                        alt="Український"
+                                                        class="navbar__option-select-icon"
+                                                    />
+                                                    <span class="navbar__option-select-label">Український</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-with-search">
+                            <div class="header__logo">
+                                <a href="" class="header__logo-link">
+                                    <img src="./assets/img/darkShop-logo.png" alt="" class="header__logo-img" />
+                                </a>
+                            </div>
+
+                            <div class="header__search">
+                                <div class="header__search-wrap">
+                                    <input type="text" placeholder="Search" class="header__search-input" />
+                                    <button class="header__search-btn">
+                                        <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <div class="header__search-history">
+                                        <h3 class="header__search-history-heading">
+                                            Search history
+                                            <i class="header__search-history-icon fa-solid fa-clock-rotate-left"></i>
+                                        </h3>
+                                        <ul class="header__search-history-list">
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title"
+                                                        >tìm người trung gian</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title">acc lol giá rẻ</span>
+                                                </a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title"
+                                                        >tool hack cf mới nhất</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title">tool liên minh</span>
+                                                </a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title"
+                                                        >đổi darkcoin sang vnd</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title">nạp darkcoin</span>
+                                                </a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="header__search-history-link">
+                                                    <span class="header__search-history-title">8 Ball Pool</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__control">
+                                <button class="header__control-btn header__control-btn-sell">SELL ITEM</button>
+                                <button class="header__control-btn header__control-btn-account js-auth-btn">
+                                    LOGIN
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header-category">
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-users"></i>
+                                        <span class="category__item-title">Accounts</span>
+                                    </a>
+                                    <div class="category__game-category">
+                                        <ul class="category__game-list">
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/dd719da6-92a8-421d-901c-1ff1e8d40b2f.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">8 Ball Pool</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/6b8ad019-e4d3-487b-90b6-3430debe7df0.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Diablo Immortal</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/free-fire.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Free Fire</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/7763fd54-5db1-4141-8cc5-0089d8f7d764.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Clash of Clans</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/league-of-legends-1.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">League of Legends</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/League_of_Legends_Wild_Rift.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title"
+                                                        >League of Legends: Wild Rift</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/PUBG_Mobile.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">PUBG Mobile</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/667b14ee-3998-4d46-a2d4-9d31ed342662.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Valorant</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/eb9d880e-0dfb-49a6-bddc-3ca00f5db2af.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Grand Theft Auto V</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/d697be04-f7d0-47ce-8e11-5e4f547a8013.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">FIFA 22</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/9893394e-cb5d-4ee7-b8ea-7b0827eb2987.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Roblox</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/fb37aa52-e3a9-4502-b482-7fc269416d17.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Minecraft</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-key"></i>
+                                        <span class="category__item-title">Game Keys</span>
+                                    </a>
+                                    <div class="category__game-category">
+                                        <ul class="category__game-list">
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/dd719da6-92a8-421d-901c-1ff1e8d40b2f.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">8 Ball Pool</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/6b8ad019-e4d3-487b-90b6-3430debe7df0.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Diablo Bất tử</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/free-fire.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Free Fire</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/7763fd54-5db1-4141-8cc5-0089d8f7d764.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Clash of Clans</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/league-of-legends-1.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">League of Legends</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/League_of_Legends_Wild_Rift.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title"
+                                                        >League of Legends: Wild Rift</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/PUBG_Mobile.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">PUBG Mobile</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/667b14ee-3998-4d46-a2d4-9d31ed342662.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Valorant</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/eb9d880e-0dfb-49a6-bddc-3ca00f5db2af.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Grand Theft Auto V</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/d697be04-f7d0-47ce-8e11-5e4f547a8013.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">FIFA 22</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/9893394e-cb5d-4ee7-b8ea-7b0827eb2987.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Roblox</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/fb37aa52-e3a9-4502-b482-7fc269416d17.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Minecraft</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-wallet"></i>
+                                        <span class="category__item-title">Top-ups</span>
+                                    </a>
+
+                                    <div class="category__game-category">
+                                        <ul class="category__game-list">
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/dd719da6-92a8-421d-901c-1ff1e8d40b2f.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">8 Ball Pool</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/6b8ad019-e4d3-487b-90b6-3430debe7df0.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Diablo Immortal</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/free-fire.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Free Fire</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/7763fd54-5db1-4141-8cc5-0089d8f7d764.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Clash of Clans</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/league-of-legends-1.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">League of Legends</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/League_of_Legends_Wild_Rift.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title"
+                                                        >League of Legends: Wild Rift</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/PUBG_Mobile.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">PUBG Mobile</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/667b14ee-3998-4d46-a2d4-9d31ed342662.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Valorant</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/eb9d880e-0dfb-49a6-bddc-3ca00f5db2af.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Grand Theft Auto V</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/d697be04-f7d0-47ce-8e11-5e4f547a8013.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">FIFA 22</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/9893394e-cb5d-4ee7-b8ea-7b0827eb2987.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Roblox</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/fb37aa52-e3a9-4502-b482-7fc269416d17.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Minecraft</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-user-shield"></i>
+                                        <span class="category__item-title">Midman</span>
+                                    </a>
+                                    <div class="category__game-category">
+                                        <ul class="category__game-list">
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/dd719da6-92a8-421d-901c-1ff1e8d40b2f.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">8 Ball Pool</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/6b8ad019-e4d3-487b-90b6-3430debe7df0.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Diablo Immortal</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/free-fire.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Free Fire</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/7763fd54-5db1-4141-8cc5-0089d8f7d764.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Clash of Clans</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/league-of-legends-1.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">League of Legends</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/League_of_Legends_Wild_Rift.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title"
+                                                        >League of Legends: Wild Rift</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/PUBG_Mobile.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">PUBG Mobile</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/667b14ee-3998-4d46-a2d4-9d31ed342662.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Valorant</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/eb9d880e-0dfb-49a6-bddc-3ca00f5db2af.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Grand Theft Auto V</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/d697be04-f7d0-47ce-8e11-5e4f547a8013.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">FIFA 22</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/9893394e-cb5d-4ee7-b8ea-7b0827eb2987.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Roblox</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/fb37aa52-e3a9-4502-b482-7fc269416d17.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Minecraft</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-dharmachakra"></i>
+                                        <span class="category__item-title">Spin</span>
+                                    </a>
+                                    <div class="category__game-category">
+                                        <ul class="category__game-list">
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/dd719da6-92a8-421d-901c-1ff1e8d40b2f.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">8 Ball Pool</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/6b8ad019-e4d3-487b-90b6-3430debe7df0.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Diablo Immortal</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/free-fire.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Free Fire</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/7763fd54-5db1-4141-8cc5-0089d8f7d764.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Clash of Clans</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/league-of-legends-1.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">League of Legends</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/League_of_Legends_Wild_Rift.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title"
+                                                        >League of Legends: Wild Rift</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/PUBG_Mobile.jpg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">PUBG Mobile</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/667b14ee-3998-4d46-a2d4-9d31ed342662.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Valorant</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/eb9d880e-0dfb-49a6-bddc-3ca00f5db2af.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Grand Theft Auto V</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/d697be04-f7d0-47ce-8e11-5e4f547a8013.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">FIFA 22</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/9893394e-cb5d-4ee7-b8ea-7b0827eb2987.jpeg"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Roblox</span>
+                                                </a>
+                                            </li>
+                                            <li class="category__game-item">
+                                                <a href="" class="category__game-item-link">
+                                                    <img
+                                                        src="https://cdn-offer-photos.zeusx.com/fb37aa52-e3a9-4502-b482-7fc269416d17.png"
+                                                        alt=""
+                                                        class="category__game-item-img"
+                                                    />
+                                                    <span class="category__game-item-title">Minecraft</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-right-left"></i>
+                                        <span class="category__item-title">Exchange darkCoin</span>
+                                    </a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__item-icon fa-solid fa-plus"></i>
+                                        <span class="category__item-title">More...</span>
+                                    </a>
+                                </li>
+                                <!-- <li class="category__item">
+                                <a href="" class="category__item-link">
+                                    <i class="category__item-icon fa-solid fa-toolbox"></i>
+                                    <span class="category__item-title">Tools, Mods</span>
+                                </a>
+                            </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container"></div>
+
+            <footer class="footer"></footer>
+
+            <!-- MODAL -->
+
+            <div class="modal js-modal">
+                <div class="modal__overlay"></div>
+
+                <div class="modal__body js-modal-container">
+                    <div class="auth-form__banner">
+                        <img
+                            src="https://images.unsplash.com/photo-1602837385569-08ac19ec83af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80"
+                            alt=""
+                            class="banner"
+                        />
+                        <div class="banner__body">
+                            <div class="banner__logo">
+                                <img class="banner__logo-img" src="./assets/img/darkShop-logo.png" alt="" />
+                            </div>
+                            <span class="banner__title"> Marketplace For All Gamers </span>
+                            <span class="banner__sub-title"> Buy, Sell and Earn With Our Services </span>
+                        </div>
+                    </div>
+
+                    <!-- SIGN IN -->
+
+                    <div class="auth-form">
+                        <div class="auth-form__header">
+                            <div class="auth-form__header-body">
+                                <h3 class="auth-form__heading">Welcome to darkShop</h3>
+                                <span class="auth-form__sub-heading"> Sign in to continue </span>
+                            </div>
+                            <div class="auth-form__btn js-modal-close">
+                                <i class="auth-form__icon fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <span class="auth-form__label">Username</span>
+                                <input type="text" placeholder="Username" class="auth-form__input" />
+                            </div>
+                            <div class="auth-form__group">
+                                <span class="auth-form__label">Password</span>
+                                <input type="password" placeholder="Min 8 characters" class="auth-form__input" />
+                            </div>
+                            <div class="auth-form__aside">
+                                <a href="" class="auth-form__forgot">Forgot Password?</a>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="auth-form__login-btn">Sign In</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <span class="auth-form__social-label">Or</span>
+                            <ul class="auth-form__social-list">
+                                <li class="auth-form__social-item">
+                                    <i class="auth-form__social-icon fa-brands fa-discord"></i>
+                                    <a href="" class="auth-form__social-link discord">Sign In with Discord</a>
+                                </li>
+                                <li class="auth-form__social-item">
+                                    <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                                    <a href="" class="auth-form__social-link facebook">Sign In with Facebook</a>
+                                </li>
+                                <li class="auth-form__social-item">
+                                    <i class="auth-form__social-icon google fa-brands fa-google"></i>
+                                    <a href="" class="auth-form__social-link google">Sign In with Google</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="auth-form__footer">
+                            <span class="auth-form__footer-title">Dont have an account?</span>
+                            <a href="" class="auth-form__footer-link">Sign Up Here</a>
+                        </div>
+                    </div>
+
+                    <!-- SIGN UP -->
+
+                    <!-- <div class="auth-form">
+                    <div class="auth-form__header-sign-up">
+                        <button class="auth-form__btn">
+                            <i class="auth-form__icon fa-solid fa-arrow-left"></i>
+                        </button>
+                        <h3 class="auth-form__heading-sign-up">
+                            Sign Up with Email
+                        </h3>
+                        <button class="auth-form__btn">
+                            <i class="auth-form__icon fa-solid fa-circle-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <span class="auth-form__label">Username</span>
+                            <input type="text" placeholder="Username" class="auth-form__input">
+                        </div>
+                        <div class="auth-form__group">
+                            <span class="auth-form__label">Email</span>
+                            <input type="email" placeholder="Email" class="auth-form__input">
+                        </div>
+                        <div class="auth-form__group">
+                            <span class="auth-form__label">Password</span>
+                            <input type="password" placeholder="Min 8 characters" class="auth-form__input">
+                        </div>
+                        <div class="auth-form__group">
+                            <span class="auth-form__label">Re-type Password</span>
+                            <input type="password" placeholder="Min 8 characters" class="auth-form__input">
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="policy">
+                                <input class="checkbox" type="checkbox">
+                                <div class="policy-body">
+                                    <span class="auth-form__policy-title">I agree with</span>
+                                    <a href="" class="auth-form__policy-link">Terms of Service</a>
+                                    <span class="auth-form__policy-title">&</span>
+                                    <a href="" class="auth-form__policy-link">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auth-form__control">
+                            <button class="auth-form__sign-up-btn">Sign Up</button>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
