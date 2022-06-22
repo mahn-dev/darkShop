@@ -328,7 +328,11 @@ body {
 }
 
 .category__game-list {
+    position: relative;
+    z-index: 1;
     list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
 }
 
 .category__game-item-link {

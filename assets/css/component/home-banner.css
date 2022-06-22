@@ -1,0 +1,111 @@
+.banner__img-full {
+    background: url(https://cdn-assets.zeusx.com/img/v2/home-banner-v2-min.png) no-repeat center / cover;
+}
+
+.home-banner {
+    height: 250px;
+    display: flex;
+}
+
+.home-banner__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.home-banner__heading {
+    font-size: 2.8rem;
+    color: var(--white-color);
+    text-shadow: 0 0 10px #000;
+}
+
+.home-banner__title {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    text-shadow: 0 0 10px #000;
+}
+
+.home-banner__leaderboard {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-color);
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.home-banner__leaderboard-header {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.home-banner__leaderboard-heading {
+    margin: 0 8px;
+}
+
+.home-banner__leaderboard-list {
+    list-style: none;
+    padding: 12px;
+}
+
+.home-banner__leaderboard-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.home-banner__leaderboard-icon {
+    font-size: 2rem;
+    margin-right: 12px;
+}
+
+.fa-star {
+    color: #ffbf56;
+}
+
+.home-banner__leaderboard-name {
+    font-size: 1.4rem;
+}
+
+.home-banner__leaderboard-achievement {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.home-banner__leaderboard-achievement:hover .home-banner__achievement-info {
+    display: block;
+}
+
+.home-banner__achievement-info {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 120px;
+    background-image: linear-gradient(#8d3cff, #bf41ff);
+    padding: 6px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: default;
+    text-align: center;
+    animation: fadeIn linear 0.2s;
+}
+
+.home-banner__achievement-info::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 10px;
+}
