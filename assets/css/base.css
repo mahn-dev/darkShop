@@ -20,6 +20,8 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
+/* GRID */
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -33,6 +35,14 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .right-side {
