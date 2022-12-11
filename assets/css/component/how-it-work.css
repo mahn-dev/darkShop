@@ -1,0 +1,37 @@
+.how-it-work {
+    color: var(--white-color);
+}
+
+.how-it-work__heading {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+
+.how-it-work__item {
+    padding: 20px;
+    height: 120px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f0a3f;
+}
+
+.how-it-work__img {
+    width: 56px;
+    height: 56px;
+}
+
+.how-it-work__content {
+    margin-left: 18px;
+}
+
+.how-it-work__title {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.how-it-work__text {
+    font-size: 1.4rem;
+    color: #9692c7;
+}

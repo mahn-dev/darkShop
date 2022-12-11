@@ -1,4 +1,3 @@
-html,
 body {
     background-color: #0d0321;
 }
@@ -6,14 +5,12 @@ body {
 .header {
     height: 185px;
     background-color: #11042a;
-    /* background-color: aqua; */
 }
 
 /* Header navbar */
 .header__navbar {
     height: 35px;
     background-color: #140532;
-    /* background-color: green; */
 }
 
 .header__navbar-container {
@@ -292,8 +289,8 @@ body {
     height: 100%;
     color: var(--white-color);
     padding: 0 22px;
-    text-decoration: none;
     background-color: #11042a;
+    user-select: none;
 }
 
 .category__item-icon {
@@ -368,7 +365,6 @@ body {
 .category__game-item-link:hover {
     animation: fadeIn linear 0.3s;
     background-color: #8d3cff;
-    /* background-color: red; */
 }
 
 .category__game-item-img {

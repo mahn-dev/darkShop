@@ -1,0 +1,52 @@
+/* Tablet & Mobile */
+
+@media (max-width: 1023px) {
+}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .header__navbar-container {
+        display: none;
+    }
+
+    .category__list {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__control {
+        display: flex;
+        flex-direction: column;
+        margin-left: unset;
+    }
+
+    .home-banner__content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-banner__heading {
+        line-height: 3rem;
+    }
+
+    .home-banner__leaderboard {
+        display: none;
+    }
+
+    .auth-form__banner {
+        display: none;
+    }
+
+    .auth-form__label {
+        margin: 0;
+    }
+}

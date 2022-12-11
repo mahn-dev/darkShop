@@ -24,10 +24,14 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <link rel="stylesheet" href="./assets/css/component/modal.css" />
         <link rel="stylesheet" href="./assets/css/component/home-banner.css" />
+        <link rel="stylesheet" href="./assets/css/component/trending-category.css" />
+        <link rel="stylesheet" href="./assets/css/component/how-it-work.css" />
         <title>darkShop</title>
     </head>
     <body>
@@ -38,7 +42,7 @@
             <header class="header">
                 <!-- Header navbar -->
                 <div class="header__navbar">
-                    <div class="grid">
+                    <div class="grid wide">
                         <div class="header__navbar-container">
                             <div class="navbar__social">
                                 <ul class="navbar__social-list">
@@ -214,14 +218,12 @@
                                 </ul>
                             </div>
                         </div>
-
                         <div class="header-with-search">
                             <div class="header__logo">
                                 <a href="" class="header__logo-link">
                                     <img src="./assets/img/darkShop-logo.png" alt="" class="header__logo-img" />
                                 </a>
                             </div>
-
                             <div class="header__search">
                                 <div class="header__search-wrap">
                                     <input type="text" placeholder="Search" class="header__search-input" />
@@ -289,10 +291,10 @@
                         <div class="header-category">
                             <ul class="category__list">
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-users"></i>
                                         <span class="category__item-title">Accounts</span>
-                                    </a>
+                                    </div>
                                     <ul class="category__game-list">
                                         <li class="category__game-item">
                                             <a href="" class="category__game-item-link">
@@ -419,53 +421,52 @@
                                     </ul>
                                 </li>
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-key"></i>
                                         <span class="category__item-title">Game Keys</span>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-wallet"></i>
                                         <span class="category__item-title">Top-ups</span>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-user-shield"></i>
                                         <span class="category__item-title">Midman</span>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-dharmachakra"></i>
                                         <span class="category__item-title">Spin</span>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-right-left"></i>
                                         <span class="category__item-title">Exchange darkCoin</span>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-plus"></i>
                                         <span class="category__item-title">More...</span>
-                                    </a>
+                                    </div>
                                 </li>
                                 <!-- <li class="category__item">
-                                    <a href="" class="category__item-link">
+                                    <div class="category__item-link">
                                         <i class="category__item-icon fa-solid fa-toolbox"></i>
                                         <span class="category__item-title">Tools, Mods</span>
-                                    </a>
+                                    </div>
                                 </li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
             </header>
-
             <div class="home-banner">
                 <img
                     src="https://cdn-assets.zeusx.com/img/v2/home-banner-v2-min.png"
@@ -473,7 +474,7 @@
                     alt=""
                 />
                 <div class="home-banner__body">
-                    <div class="grid">
+                    <div class="grid wide">
                         <div class="home-banner__content">
                             <div class="home-banner__label">
                                 <h3 class="home-banner__heading">Gaming Marketplace For All Gamers</h3>
@@ -542,11 +543,174 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-3">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-12">
+                            <div class="trending-category">
+                                <div class="trending-category__header">
+                                    <h3 class="trending-category__heading">Trending Games</h3>
+                                    <div class="trending-category__action">
+                                        <button class="trending-category__btn">
+                                            <i class="trending-category__btn-icon fa-regular fa-circle-left"></i>
+                                        </button>
+                                        <button class="trending-category__btn trending-category__btn--active">
+                                            <i class="trending-category__btn-icon fa-regular fa-circle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col c-2">
+                                        <div class="trending-category__item">
+                                            <a href="" class="trending-category__link">
+                                                <div class="trending-category__overlay"></div>
+                                                <img
+                                                    src="https://cdn-game-photos.zeusx.com/Genshin_Impact.png"
+                                                    alt=""
+                                                    class="trending-category__img"
+                                                />
+                                                <a href="" class="trending-category__title-link">Genshin Impact</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col c-2">
+                                        <div class="trending-category__item">
+                                            <a href="" class="trending-category__link">
+                                                <div class="trending-category__overlay"></div>
+                                                <img
+                                                    src="https://cdn-game-photos.zeusx.com/Genshin_Impact.png"
+                                                    alt=""
+                                                    class="trending-category__img"
+                                                />
+                                                <a href="" class="trending-category__title-link">Genshin Impact</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col c-2">
+                                        <div class="trending-category__item">
+                                            <a href="" class="trending-category__link">
+                                                <div class="trending-category__overlay"></div>
+                                                <img
+                                                    src="https://cdn-game-photos.zeusx.com/Genshin_Impact.png"
+                                                    alt=""
+                                                    class="trending-category__img"
+                                                />
+                                                <a href="" class="trending-category__title-link">Genshin Impact</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col c-2">
+                                        <div class="trending-category__item">
+                                            <a href="" class="trending-category__link">
+                                                <div class="trending-category__overlay"></div>
+                                                <img
+                                                    src="https://cdn-game-photos.zeusx.com/Genshin_Impact.png"
+                                                    alt=""
+                                                    class="trending-category__img"
+                                                />
+                                                <a href="" class="trending-category__title-link">Genshin Impact</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col c-2">
+                                        <div class="trending-category__item">
+                                            <a href="" class="trending-category__link">
+                                                <div class="trending-category__overlay"></div>
+                                                <img
+                                                    src="https://cdn-game-photos.zeusx.com/Genshin_Impact.png"
+                                                    alt=""
+                                                    class="trending-category__img"
+                                                />
+                                                <a href="" class="trending-category__title-link">Genshin Impact</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col c-2">
+                                        <div class="trending-category__item">
+                                            <a href="" class="trending-category__link">
+                                                <div class="trending-category__overlay"></div>
+                                                <img
+                                                    src="https://cdn-game-photos.zeusx.com/Genshin_Impact.png"
+                                                    alt=""
+                                                    class="trending-category__img"
+                                                />
+                                                <a href="" class="trending-category__title-link">Genshin Impact</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col c-12">
+                            <div class="how-it-work">
+                                <h3 class="how-it-work__heading">How it Works?</h3>
+                                <div class="row">
+                                    <div class="col c-3">
+                                        <div class="how-it-work__item">
+                                            <img
+                                                src="https://cdn-assets.zeusx.com/img/v2/hiw-register-v2.png"
+                                                alt=""
+                                                class="how-it-work__img"
+                                            />
+                                            <div class="how-it-work__content">
+                                                <h4 class="how-it-work__title">Registration</h4>
+                                                <p class="how-it-work__text">
+                                                    Register for free to unlock more features
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="how-it-work__item">
+                                            <img
+                                                src="https://cdn-assets.zeusx.com/img/v2/hiw-payment-v2.png"
+                                                alt=""
+                                                class="how-it-work__img"
+                                            />
+                                            <div class="how-it-work__content">
+                                                <h4 class="how-it-work__title">Payment</h4>
+                                                <p class="how-it-work__text">Checkout with your preferred method</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="how-it-work__item">
+                                            <img
+                                                src="https://cdn-assets.zeusx.com/img/v2/hiw-delivery-v2.png"
+                                                alt=""
+                                                class="how-it-work__img"
+                                            />
+                                            <div class="how-it-work__content">
+                                                <h4 class="how-it-work__title">Delivery</h4>
+                                                <p class="how-it-work__text">
+                                                    Wait for your order to be delivered (some types are instant)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="how-it-work__item">
+                                            <img
+                                                src="https://cdn-assets.zeusx.com/img/v2/hiw-confirmation-v2.png"
+                                                alt=""
+                                                class="how-it-work__img"
+                                            />
+                                            <div class="how-it-work__content">
+                                                <h4 class="how-it-work__title">Confirmation</h4>
+                                                <p class="how-it-work__text">
+                                                    Validate delivery is made. The seller is only paid after this
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-4 c-6">
                             <div class="home-product__item">
                                 <a href="" class="home-product__item-img-link">
                                     <img
@@ -555,7 +719,6 @@
                                         class="home-product__img"
                                     />
                                 </a>
-
                                 <div class="home-product__info">
                                     <a href="" class="home-product__info-name">Valorant</a>
                                     <a href="" class="home-product__info-title"
@@ -581,7 +744,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-3">
+                        <div class="col l-3 m-4 c-6">
+                            <div class="home-product__item">
+                                <a href="" class="home-product__item-img-link">
+                                    <img
+                                        src="https://cdn-offer-photos.zeusx.com/4581cb5b-0cfe-4d13-99c3-aa87ce2cf98d_thumbnail@x1.jpg"
+                                        alt=""
+                                        class="home-product__img"
+                                    />
+                                </a>
+                                <div class="home-product__info">
+                                    <a href="" class="home-product__info-name">Valorant</a>
+                                    <a href="" class="home-product__info-title"
+                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
+                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
+                                        over 1000€</a
+                                    >
+                                    <span class="home-product__info-price">$300.00</span>
+                                    <div class="home-product__seller">
+                                        <a href="" class="home-product__seller-link-img">
+                                            <img
+                                                src="https://cdn-offer-photos.zeusx.com/4581cb5b-0cfe-4d13-99c3-aa87ce2cf98d_thumbnail@x1.jpg"
+                                                alt=""
+                                                class="home-product__seller-img"
+                                            />
+                                        </a>
+                                        <a href="" class="home-product__seller-name">darkShop</a>
+                                        <div class="home-product__seller-star">
+                                            <div class="home-product__seller-star-label">4.8</div>
+                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
                             <div class="home-product__item">
                                 <a href="" class="home-product__item-img-link">
                                     <img
@@ -590,7 +787,6 @@
                                         class="home-product__img"
                                     />
                                 </a>
-
                                 <div class="home-product__info">
                                     <a href="" class="home-product__info-name">Valorant</a>
                                     <a href="" class="home-product__info-title"
@@ -616,7 +812,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-3">
+                        <div class="col l-3 m-4 c-6">
                             <div class="home-product__item">
                                 <a href="" class="home-product__item-img-link">
                                     <img
@@ -625,427 +821,6 @@
                                         class="home-product__img"
                                     />
                                 </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
-                                <div class="home-product__info">
-                                    <a href="" class="home-product__info-name">Valorant</a>
-                                    <a href="" class="home-product__info-title"
-                                        >Immortal 3 Peak EU | Full Access| Skins worth over 1000€ Immortal 3 Peak EU |
-                                        Full Access| Skins worth over 1000€Immortal 3 Peak EU | Full Access| Skins worth
-                                        over 1000€</a
-                                    >
-                                    <span class="home-product__info-price">$300.00</span>
-                                    <div class="home-product__seller">
-                                        <a href="" class="home-product__seller-link-img">
-                                            <img
-                                                src="https://cdn-user-photo.zeusx.com/7435f3fa-ccb6-46ec-b063-326a424f14e7.jpg"
-                                                alt=""
-                                                class="home-product__seller-img"
-                                            />
-                                        </a>
-                                        <a href="" class="home-product__seller-name">darkShop</a>
-                                        <div class="home-product__seller-star">
-                                            <div class="home-product__seller-star-label">4.8</div>
-                                            <i class="home-product__seller-star-icon fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__column-3">
-                            <div class="home-product__item">
-                                <a href="" class="home-product__item-img-link">
-                                    <img
-                                        src="https://cdn-offer-photos.zeusx.com/6abff79a-fa43-4ea8-8442-984b3681440c_thumbnail@x1.jpg"
-                                        alt=""
-                                        class="home-product__img"
-                                    />
-                                </a>
-
                                 <div class="home-product__info">
                                     <a href="" class="home-product__info-name">Valorant</a>
                                     <a href="" class="home-product__info-title"
