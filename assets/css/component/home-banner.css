@@ -108,7 +108,7 @@
     transform: translateY(-50%);
     right: 0;
     width: 60%;
-    background-image: linear-gradient(#8d3cff, #bf41ff);
+    background-image: linear-gradient(to right, #8d3cff, #bf41ff);
     padding: 6px;
     margin: 0 20px;
     font-size: 1.2rem;

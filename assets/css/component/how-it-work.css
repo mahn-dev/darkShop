@@ -27,6 +27,7 @@
 }
 
 .how-it-work__title {
+    cursor: default;
     font-size: 1.6rem;
     margin-bottom: 6px;
 }
@@ -34,4 +35,5 @@
 .how-it-work__text {
     font-size: 1.4rem;
     color: #9692c7;
+    cursor: default;
 }
