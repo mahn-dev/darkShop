@@ -36,11 +36,19 @@
     display: none;
 }
 
+/* 100% / 12 * số cột */
+
 .c-1 {
     /* Set chiều ngang/dọc tùy vào phần tử chứa nó có thuộc tính flex-direction là row/column */
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
 }
+
+.c-1-5 {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+}
+
 .c-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;

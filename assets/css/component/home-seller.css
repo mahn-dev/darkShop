@@ -1,0 +1,139 @@
+.home-seller__background {
+    background-color: #1b0930;
+}
+
+.home-seller {
+    margin-top: 86px;
+    color: var(--white-color);
+}
+
+.home-seller__heading {
+    font-size: 3.4rem;
+}
+
+.home-seller__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.home-seller__title {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    opacity: 0.75;
+}
+
+.home-seller__card {
+    position: relative;
+    background: linear-gradient(90deg, #1c093c, #280f4c);
+    /* background-color: #fff; */
+    padding: 20px;
+    height: 334px;
+    border-radius: 10px;
+    margin: 20px 0 50px;
+}
+.home-seller__details {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    background-color: #200b40;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.home-seller__details-title,
+.home-seller__details-icon {
+    font-size: 1.4rem;
+    margin-right: 8px;
+    line-height: 1.6rem;
+}
+
+.home-seller__seller-info {
+    position: relative;
+    display: flex;
+}
+
+.home-seller__seller-info::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    border: 1px dashed var(--white-color);
+    opacity: 0.5;
+}
+
+.home-seller__img {
+    width: 42px;
+    height: 100%;
+    border-radius: 50px;
+}
+.home-seller__seller-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.home-seller__seller-name,
+.home-seller__seller-legit {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.home-seller__seller-legit {
+    color: #4297ff;
+}
+.home-seller__seller-rank {
+    margin-top: 6px;
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-seller__seller-rank-img {
+    width: 24px;
+    height: 100%;
+    margin-right: 8px;
+}
+.home-seller__seller-rank-title {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    opacity: 0.75;
+}
+
+.home-seller__seller-game {
+    margin-top: 40px;
+    color: var(--white-color);
+}
+
+.home-seller__game-sold-heading {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #9692c7;
+    font-weight: 500;
+}
+.home-seller__sold-game {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.home-seller__sold-game-img {
+    width: 32px;
+    height: 100%;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+.home-seller__sold-game-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}

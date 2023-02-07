@@ -32,6 +32,26 @@ html {
     left: 0;
 }
 
+.disable {
+    display: none;
+}
+
+.l-r-arrow__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #280f4c;
+}
+
+.l-r-arrow__btn--active .l-r-arrow__btn-icon {
+    color: #ffbf56;
+}
+
+.l-r-arrow__btn-icon {
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
 /* ANIMATION */
 
 @keyframes growth {
