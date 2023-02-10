@@ -260,6 +260,14 @@
     color: #333;
 }
 
+.instagram {
+    background-color: #f00073;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
 .auth-form__footer {
     text-align: center;
     font-size: 1.4rem;

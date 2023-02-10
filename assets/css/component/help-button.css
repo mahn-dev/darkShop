@@ -7,6 +7,7 @@
     background-color: #ae2be8;
     color: var(--white-color);
     border-radius: 50px;
+    border: none;
 }
 
 .help-button__link {
